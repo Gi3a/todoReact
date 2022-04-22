@@ -1,0 +1,33 @@
+.Component {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	min-height: 100vh;
+	background: #ddd;
+}
+
+.Component ul {
+	list-style: none;
+}
+
+.Component li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.Component input,
+.Component button {
+	padding: 15px;
+}
+
+.Component input:checked+span {
+	text-decoration: line-through;
+}
+
+.Component span:last-child {
+	color: red;
+	cursor: pointer;
+}
